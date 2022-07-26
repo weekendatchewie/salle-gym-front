@@ -186,10 +186,46 @@ h1 {
     .btn-accueil {
         padding: 12px;
         margin-top: 20px;
+        box-shadow: 3px 3px 0 0 #f1f1f1;
     }
 
     .bloc-gauche-accueil {
         width: 50%;
     }
 
+}
+
+@media screen and (max-width: 550px) {
+    .accueil {
+        height: 450px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding-top: 100px;
+        margin-left: 2vw;
+    }
+
+    .accueil p {
+        font-size: 20px;
+        margin-left: 2vw;
+        margin-bottom: 15px;
+    }
+
+    .btn-accueil {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .b1 {
+        margin-left: 2vw;
+    }
+
+    .b2 {
+        margin-left: 10px;
+    }
+
+    .bloc-gauche-accueil {
+        box-shadow: 20px 0 100px 100px #000;
+    }
 }
