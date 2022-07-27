@@ -284,3 +284,10 @@ h1 {
     font-size: 18px;
     padding: 5px 0 10px;
 }
+
+.deco-info {
+    position: absolute;
+    top: -70px;
+    left: -100px;
+    z-index: -1;
+}
