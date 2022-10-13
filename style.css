@@ -39,7 +39,7 @@ nav a {
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
-    transition: opacity 1s;
+    transition: opacity .15s;
     /*display: block;*/
     position: relative;
     /*padding: 0.2em 0;*/
@@ -54,7 +54,7 @@ nav a::after {
     height: 0.1em;
     background-color: #fff;
     opacity: 0;
-    transition: opacity 300ms, transform 300ms, width .3s;
+    transition: opacity 0.15s, transform 0.15s, width .15s;
 }
 
 nav a:hover::after,
@@ -127,19 +127,20 @@ h1 {
     width: 150px;
     cursor: pointer;
     box-shadow: 5px 5px 0 0 #f1f1f1;
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: color .3s, background .3s, top .3s, left .3s, box-shadow .3s ease-in-out;
-
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*transition: color .3s, background .3s, top .3s, left .3s, box-shadow .3s ease-in-out;*/
+    transition: all .15s linear;
 }
 
 .btn-home:hover {
     color: #000;
     background: #f1f1f1;
-    left: 5px;
-    top: 5px;
+    /*left: 5px;*/
+    /*top: 5px;*/
     box-shadow: none;
+    transform: translate(5px, 5px);
 }
 
 .btn1 {
@@ -342,4 +343,61 @@ h1 {
     font-size: 18px;
     width: 70%;
     margin: 0 auto 30px;
+}
+
+.btn-outline-choice {
+    width: 300px;
+    padding: 15px 0;
+    font-size: 22px;
+    background-color: #000;
+    color: #f1f1f1;
+    border: 2.5px solid #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #f1f1f1;
+    transition: all 0.15s linear;
+}
+
+.btn-outline-choice:hover {
+    color: #000;
+    background: #f1f1f1;
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+@media screen and (max-width: 1200px) {
+    .training-choice{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .training-choice h3{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+    #choice {
+        flex-direction: column;
+    }
+
+    .training-choice h3{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .btn-outline-choice {
+        width: 250px;
+    }
+
+    .training-choice{
+        width: 350px;
+        margin: 50px 0 70px;
+    }
+
+    .training-choice:nth-child(1) {
+        margin: 50px 20px 0;
+    }
 }
